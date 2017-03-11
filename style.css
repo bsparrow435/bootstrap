@@ -104,8 +104,10 @@ body {
     padding-top: 48px;
     padding-bottom: 48px;
   }
+}
+
+@media (min-width: 575px) {
   .below-image {
     position: inherit;
   }
-
 }
