@@ -24,6 +24,27 @@
   margin: auto 0;
 }
 
+.about-us-wrapper {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.about-us-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container .jumbotron {
+  border-radius: 0;
+}
+
+.page-header {
+  z-index: 20;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -46,4 +67,16 @@
     border-radius: 4px;
   }
 
+  .about-us-wrapper {
+    margin-top: 25px;
+  }
+
+  .about-us-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .container .jumbotron {
+    border-radius: 6px;
+  }
 }
