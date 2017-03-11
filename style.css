@@ -1,6 +1,6 @@
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -45,6 +45,11 @@
   z-index: 20;
 }
 
+.jumbotron {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -57,14 +62,12 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .about-us-wrapper {
@@ -79,4 +82,10 @@
   .container .jumbotron {
     border-radius: 6px;
   }
+
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
 }

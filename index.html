@@ -27,7 +27,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!--Header background image-->
     <img src="assets/img/header.jpg" class="img-responsive center-block">
     <!--Inverse navbar with background image, maybe change due to mobile look-->
@@ -47,7 +47,7 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">About Us</a></li>
+                <li class="active"><a href="#about">About Us</a></li>
                 <li><a href="#info">Hours and Info</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Farmers <span class="caret"></span></a>
@@ -73,7 +73,7 @@
 
     <div class="row about-us-wrapper">
       <div class="container">
-        <div class="jumbotron">
+        <div class="jumbotron" id="about">
           <h2>Fresh, Local Produce. 7 days a week!</h2>
           <div class="media">
             <div class="media-left">
@@ -81,15 +81,15 @@
               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDiehlsProduceAnnapolis&tabs&width=330&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="330" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             </div>
             <div class="media-body">
-              <h4 class="media-heading">Media Heading</h4>
-              <h6> It was all a dream. I used to read Word Up magazine. Now I own a produce stand. Life is good.</h6>
+              <!--<h4 class="media-heading">Media Heading</h4>
+              <h6> It was all a dream. I used to read Word Up magazine. Now I own a produce stand. Life is good.</h6>-->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="page-header text-center">
+    <div class="page-header text-center" id="info">
       <h1> HOURS AND INFO</h1>
     </div>
 
