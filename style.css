@@ -1,6 +1,10 @@
+body {
+  background-color: #eee;
+}
+
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -24,6 +28,44 @@
   margin: auto 0;
 }
 
+.about-us-wrapper {
+  position: absolute;
+  top: 75px;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.about-us-wrapper .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container .jumbotron {
+  border-radius: 0;
+  padding-left: 5px;
+}
+
+.jumbotron {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.jumbotron h2 {
+  margin-top: 10px;
+}
+
+.below-image {
+  position: absolute;
+  top: 300px;
+  right: 0;
+  left: 0;
+}
+
+.page-header {
+  z-index: 20;
+  border-bottom: 1px solid #2f2f2f;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -36,14 +78,36 @@
     padding-right: 15px;
     padding-left: 15px;
   }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
+  .about-us-wrapper {
+    margin-top: 25px;
+  }
+
+  .about-us-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .container .jumbotron {
+    border-radius: 6px;
+    padding-left: 15px;
+  }
+
+  .jumbotron {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (min-width: 575px) {
+  .below-image {
+    position: inherit;
+  }
 }
